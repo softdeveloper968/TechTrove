@@ -1,0 +1,97 @@
+{
+  "name": "connect2court",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "@marsidev/react-turnstile": "^0.7.1",
+    "@tailwindcss/typography": "^0.5.13",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/jwt-decode": "^3.1.0",
+    "@types/node": "^16.18.68",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.18",
+    "@types/react-input-mask": "^3.0.5",
+    "@types/react-select": "^5.0.1",
+    "@types/react-table": "^7.7.20",
+    "axios": "^1.6.2",
+    "chart.js": "^4.4.3",
+    "file-saver": "^2.0.5",
+    "formik": "^2.4.6",
+    "guid-typescript": "^1.0.9",
+    "jszip": "^3.10.1",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "papaparse": "^5.4.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.0.379",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.8.2",
+    "react": "^18.2.0",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.0",
+    "react-icons": "^4.12.0",
+    "react-input-mask": "^2.0.4",
+    "react-pdf": "^7.7.1",
+    "react-router-dom": "^6.20.1",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-spinners": "^0.13.8",
+    "react-table": "^7.8.0",
+    "react-tabs": "^6.0.2",
+    "react-toastify": "^9.1.3",
+    "react-tooltip": "^5.27.0",
+    "react-typescript-pdf-reader": "^0.0.13",
+    "rsuite": "^5.61.0",
+    "rxjs": "^7.8.1",
+    "stream": "^0.0.2",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/downloadjs": "^1.4.6",
+    "@types/file-saver": "^2.0.7",
+    "@types/html-pdf": "^3.0.3",
+    "@types/papaparse": "^5.3.14",
+    "@types/pdf-parse": "^1.1.4",
+    "@types/react-datepicker": "^4.19.5",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-toastify": "^4.1.0",
+    "@types/xlsx": "^0.0.36",
+    "@types/yup": "^0.32.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.7"
+  }
+}

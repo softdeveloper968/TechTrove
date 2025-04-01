@@ -1,0 +1,1103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind typography;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #acabab;
+}
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+/* Add these styles to your CSS file */
+.blue-text {
+  color: #2472db;
+}
+
+.status-deposited {
+  color: #388e52;
+}
+
+.status-overdue {
+  color: rgba(255, 44, 44, 0.863);
+}
+
+.status-due {
+  color: #fba200;
+}
+textarea#multilineInput:-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+textarea#multilineInput:-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea#multilineInput:-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+  border-radius: 0;
+  border: 0px solid transparent;
+  background-color: #c7c7c7;
+}
+
+textarea#multilineInput::-webkit-scrollbar,
+textarea#multilineInput::-webkit-scrollbar-thumb {
+  height: 8px;
+  border-radius: 0;
+  background-clip: padding-box;
+  border: 0px solid transparent;
+  width: 8px;
+  background-color: #d8dde3;
+}
+
+textarea#multilineInput::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px #acabab;
+}
+.react-pdf__Page__textContent  {
+  display: none;
+} 
+.search-textarea{
+  border-radius: 100px;
+  overflow: hidden;
+  background: #fff;
+}
+.react-datepicker-wrapper{
+  width: 100%;
+}
+.bg-login {
+  background-image: url('./assets//images/LoginImage.png');
+}
+td.Document, td.WritPDFs {
+  @apply whitespace-nowrap;
+}
+td.Address, td.ServiceMethod,td.Reason {
+  @apply min-w-52;
+}
+td.Name {
+  @apply min-w-28;
+}
+.preview-data thead tr > th.min-w-32:first-child{
+  @apply min-w-10;
+}
+.Reason select{
+  @apply h-8 text-xs;
+}
+.toggleSwitch .awitch-btn{
+  @apply !mb-0;
+}
+table input[type="checkbox"]{
+  @apply inline-block align-middle;
+}
+.filterSec .select-box{
+  @apply w-auto mr-1.5 min-w-[164px];
+}
+.filterSec.logsFilter .select-box{
+  @apply w-auto mr-1.5 min-w-[136px];
+}
+ul .active-tab-class{
+  @apply !rounded-b-[0px];
+}
+button[disabled] {
+  @apply pointer-events-none;
+  opacity: 0.6;
+}
+.drawer-modal .tableGrid{
+  @apply h-[calc(100vh_-_200px)] min-h-[auto] max-h-[100%];
+}
+.modal-box:has(.uploadDocsPopUp){
+	@apply z-[999];
+}
+.drawer-modal .tableGrid thead tr > th.min-w-32:first-child, .drawer-modal .tableGrid thead tr > th.min-w-32:nth-child(2) {
+  @apply min-w-[6rem];
+}
+.drawer-modal:has(.modal-box) {
+  @apply z-[99];
+}
+.drawer-modal .select-option{
+  @apply h-[30px];
+}
+td:has(.writApplicantOther) .select-box {
+  @apply min-w-[91px];
+}
+th.z-10:has(.react-tooltip) {
+  @apply z-[11];
+}
+.react-datepicker-popper {
+  @apply !z-[99];
+}
+div#my-tooltip {
+  max-width: 228px;
+  white-space: normal;
+}
+.amendments-grid table tr:has(td input:checked),.writlabor-writofpossession-grid table tr:has(td .selectRowCheckbox input:checked), .process-server-grid table tr:has(td input:checked) {
+  @apply bg-[#c9e2ff];
+}
+
+.amendments-grid table thead tr th:first-child, .amendments-grid table thead tr th:nth-child(2) {
+  min-width: auto;
+}
+.tableGrid:has(.datePicker){
+  @apply static;
+}
+.relative.transform.overflow-hidden:has(.datePicker), .edit_modal:has(.date_control), .relative.transform.overflow-hidden:has(.react-datepicker-popper), .relative.transform.overflow-hidden:has(.top-full) {
+  overflow: inherit;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.gridHeaderEmail {
+  @apply !w-[14rem];
+}
+.custom-select .css-13cymwt-control, .custom-select .css-t3ipsp-control{
+  @apply w-full rounded h-9 md:h-10 outline-0 p-0 text-xs border border-gray-200 text-xs;
+}
+.custom-select .css-1nmdiq5-menu *{
+  font-size: 11px;
+}
+.custom-select .css-1dimb5e-singleValue{
+    color: #000;
+}
+.w-245{
+  width: 136px;
+}
+.ServiceType .select-option, .ServiceDate .bg-calendar, .DateScanned .bg-calendar, .EvictionServiceDate .bg-calendar{
+  @apply h-[30px];
+}
+.Status .awitch-btn, .Disabled .awitch-btn{
+  justify-content: flex-start;
+}
+.importCsv th.TenantAddress, 
+.importCsv th.PropertyAddress, 
+.importCsv th.EvictionReason, 
+.bulkEditModal th.TenantAddress,
+.bulkEditModal th.EvictionReason,
+.bulkEditModal th.PropertyAddress {
+  min-width: 220px;
+}
+.importCsv th.PropertyEmail, 
+.importCsv th.AttorneyEmail,
+.importCsv th.EvictionFilerEmail,
+.importCsv th.StateCourt,
+.bulkEditModal th.PropertyEmail,
+.bulkEditModal th.AttorneyEmail,
+.bulkEditModal th.EvictionFilerEmail,
+.bulkEditModal th.StateCourt {
+  min-width: 204px;
+}
+.writlabor-writofpossession-grid table tr:has(td .selectRowCheckbox input:checked) .allcasesWrit_county {
+  background-color: #c9e2ff;
+}
+.drawer-modal .tableGrid:has(.react-datepicker__tab-loop) {
+  position: initial;
+}
+.drawer-modal .WritReason, .drawer-modal .WritApplicantIs, .drawer-modal .WritLabor {
+  min-width: 136px;
+}
+.DismissalReason {
+  min-width: 160px;
+}
+.modal-box .tableGrid .select-option {
+   height: 30px;
+}
+table .Phone {
+  white-space: nowrap;
+}
+.modal-box .overflow-y-auto.max-h-\[450px\] {
+  padding-right: 4px;
+  margin-right: -4px;
+}
+.bg-login {
+  min-height: 100vh;
+  height: auto !important;
+  width: 100%;
+}
+.tab_scroll {
+  overflow: auto; 
+  padding-bottom: 2px;
+  flex-flow: nowrap;
+}
+.tab_scroll .tabListView {
+  width: 100%;
+}
+.management_view > .awitch-btn, .cases_grid .awitch-btn{
+  position: absolute;
+  top: -32px;
+  width: auto;
+  right: 0;
+  margin: 0;
+}
+td.PropertyNameVs\.Tenants, td.ServiceNotes, td.Comments {
+  min-width: 220px;
+}
+th.TenantAddress, th.EvictionReason, td.EvictionOtherFees{
+  min-width: 140px;
+}
+td.fullPropertyNameAddress {
+  white-space: nowrap;
+}
+.app-sidebar {
+   z-index: 12 !important;
+}
+td.Description,td.TenantOne,td.TenantTwo,td.TenantThree,td.TenantFour,td.TenantFive,td.PropertyName {
+  min-width: 200px;
+}
+td.Notes, td.Company {
+   min-width: 172px;
+}
+.action, .Action {
+  text-align: center;
+  width: 65px;
+  min-width: 65px;
+}
+.action .flex, .Action .flex {
+   justify-content: center;
+   margin: 0;
+}
+table:has(th.action) .flex.flex-row, table:has(th.Action) .flex.flex-row {
+  justify-content: center;
+}
+select, input, textarea, .tabListView li{
+  outline: none !important;
+  box-shadow: none !important;
+}
+td.AllPDFs {
+   min-width: 145px;
+}
+button{
+  outline: none !important;
+}
+select.select-option:focus {
+  border-color: #3b82f6 !important;
+}
+.fields_validation{
+  position: relative;
+  padding: 20px 0;
+}
+.fields_validation .text-red-500 {
+  position: absolute;
+  margin: 0px;
+  font-size: 10px;
+  line-height: 10.7px;
+  white-space: normal;
+  text-align: left;
+}
+.fields_validation{
+  position: relative;
+  padding: 20px 0;
+}
+.tableGrid:has(tr > td .text-red-500) .fields_validation{
+  padding: 11px 0 20px;
+}
+.importCsv .tableGrid tr td, .bulkEditModal .tableGrid tr td{
+  vertical-align: top;
+}
+.importCsv .tableGrid td .text-red-500, .bulkEditModal .tableGrid td .text-red-500 {
+  margin: 2px 0 0;
+  font-size: 10px;
+  line-height: 10px;
+  min-width: 90px;
+}
+.importCsv .tableGrid tr:has(> td .text-red-500) td, .bulkEditModal .tableGrid tr:has(> td .text-red-500) td{
+  padding-top: 16px;
+}
+.importCsv .trash-icon, .bulkEditModal .tableGrid .selectRowCheckbox, .bulkEditModal .editRowCheckbox{
+  height: 31px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bulkEditModal .tableGrid .selectRowCheckbox, .bulkEditModal .editRowCheckbox{
+  justify-content: flex-start;
+}
+td.State {
+  min-width: 90px;
+}
+.bulkEditModal .CaseNo > span {
+  min-height: 31px;
+  display: inline-flex;
+  align-items: center;
+}
+th.Service.Notes {
+   min-width: 200px;
+}
+body .react-datepicker-popper[data-placement^=top] {
+  padding-bottom: 3px;
+}
+.court_payments .select-box {
+  justify-content: flex-start;
+}
+.court_payments .select-box .flex {
+  max-width: 100%;
+}
+.modal-box .select-box > .flex {
+  max-width: 100%;
+}
+table tbody > tr:has( + tr.expand_row) .icon {
+  transform: rotate(180deg);
+}
+.trans_filter > .flex.relative textarea {
+  margin: 0;
+}
+.accounting_grid td.Amount, .accounting_grid td.Limit, .accounting_grid  td.NoLimit {
+  max-width: 128px;
+  width: 128px;
+}
+.accounting_grid th.Amount {
+  width: 95px;
+}
+.accounting_grid th.Description {
+  min-width: 212px;
+  text-align: left;
+}
+.transaction .icon-container{
+  @apply bg-[#42CDFF40];
+}
+.Invoices .icon-container{
+  @apply bg-[#E7F6E8];
+}
+.AmountDue .icon-container{
+  @apply bg-[#FFF1CC];
+}
+.Wallet .icon-container{
+  @apply bg-[#D7E7FE];
+}
+.Burn .icon-container{
+  @apply bg-[#f9e0e0];
+}
+.transactionGrid .Amount, .transactionGrid .RemainingAmount,.transactionGrid .remainingAmount,.transactionGrid .amount{
+  text-align: right;
+}
+.transactionGrid .DateTime,.transactionGrid .createdDate{
+  min-width:128px;
+  text-align: left;
+}
+th.ReferenceId, td.transactionReferenceId {
+  text-align: right;
+  padding-right: 15px;
+}
+.wallet_grid, .invoices_grid, .customers_grid{
+  margin-top: -47px;
+}
+.wallet_grid .tableGrid, .invoices_grid .tableGrid, .customers_grid .tableGrid {
+  margin-top: 10px;
+}
+.react-datepicker__tab-loop:has(.react-datepicker__month-container) .react-datepicker__triangle {
+   margin-left: -28px !important;
+}
+.setting_tab .select-box .flex {
+  max-width: 100%;
+}
+td.ClientId {
+  white-space: nowrap;
+}
+td.Court,td.StateCourt {
+   min-width: 160px;
+}
+td.EAFee {
+   min-width: 120px;
+}
+.dashboard td.DueDate {
+   white-space: nowrap;
+}
+.accounting_grid .TotalAmount {
+   /* text-align: right; */
+   display: flex;
+   justify-content: end;
+}
+.accounting_grid .TotalAmount .flex {
+   justify-content: flex-end;
+}
+.accounting_grid .Status span, .accounting_grid .OperationType span {
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 13.12px;
+   text-align: left;
+   display: inline-flex;
+   padding: 4px 10px;
+   border-radius: 3px;
+}
+.accounting_grid .status-due span, .test,
+.system_info_grid .status-due span{
+   background: #FBB40026;
+   color: #FBB400;
+}
+.accounting_grid .status-overdue span, .test, 
+.system_info_grid .status-overdue span{
+   background: #FF434324;
+   color: #E61818;
+}
+.accounting_grid .status-paid span, .test,
+.system_info_grid .status-paid span{
+   background: #4DB4521C;
+   color: #4DB452;
+}
+.NeedToSend span {
+   font-weight: 600;
+   color: #FBB400;
+}
+.EmailSent span {
+   font-weight: 600;
+   color: #4DB452;
+}
+.NotSet span {
+   font-weight: 600;
+   color: #E61818;
+}
+.dashboard .bg-white .animate-spin {
+  position: absolute;
+}
+.writ {
+   background-color: #ffe4e4;
+   color: #E61818;
+}
+.eviction {
+   background-color: #e9f7ff;
+   color: #0d6ae7;
+}
+.dismissal {
+   background-color: #e3ffe5;
+   color: #4DB452;
+}
+.amendment {
+   background-color: #ffeee4;
+   color: #FF914D;
+}
+.aos {
+ background-color: #e6e6e6;
+ color: #333333;
+}
+.answer_sec label {
+   font-weight: inherit;
+   color: inherit;
+}
+.answer_sec label:empty {
+   display: none;
+}
+.ans_form input[type=number], .ans_form input[type=text], .ans_form textarea, .ans_form .peer  {
+   padding: 4px 7px;
+   font-size: 11px;
+   border-radius:4px;
+}
+.info_box label{
+   min-width:112px ;
+}
+.info_box input {
+   max-width: 200px;
+   min-width: 200px;
+}
+.menu_dropdown .pt-2\.5 {
+  padding: 0;
+}
+.filterSec .select-option, .filterSec input.bg-calendar, .filterSec .custom-select .css-13cymwt-control, .filterSec .custom-select .css-t3ipsp-control {
+  height: 34px;
+  min-height: auto;
+}
+.modal-box .writlabor-writofpossession-grid .tableGrid table {
+  width: 100%;
+  table-layout: auto;
+}
+td.FilingError,td.CancelError,td.RejectedReason {
+  min-width: 185px;
+}
+
+
+.switch {
+  --button-width: 3em;
+  --button-height: 1.5em;
+  --toggle-diameter: 1em;
+  --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+  --toggle-shadow-offset: 8px;
+  --toggle-wider: 2.5em;
+  --color-grey: #cccccc;
+  --color-green: #4296f4;
+ }
+ 
+ .slider {
+  display: inline-block;
+  width: var(--button-width);
+  height: var(--button-height);
+  background-color: var(--color-grey);
+  border-radius: calc(var(--button-height) / 2);
+  position: relative;
+  transition: 0.3s all ease-in-out;
+ }
+ 
+ .slider::after {
+  content: "";
+  display: inline-block;
+  width: var(--toggle-diameter);
+  height: var(--toggle-diameter);
+  background-color: #fff;
+  border-radius: calc(var(--toggle-diameter) / 2);
+  position: absolute;
+  top: var(--button-toggle-offset);
+  transform: translateX(var(--button-toggle-offset));
+  box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+  transition: 0.3s all ease-in-out;
+ }
+ 
+ .switch input[type="checkbox"]:checked + .slider {
+  background-color: var(--color-green);
+ }
+ 
+ .switch input[type="checkbox"]:checked + .slider::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+  box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+ }
+ 
+ .switch input[type="checkbox"] {
+  display: none;
+ }
+ 
+ .switch input[type="checkbox"]:active + .slider::after {
+  width: var(--toggle-wider);
+ }
+ 
+ .switch input[type="checkbox"]:checked:active + .slider::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+ }
+ th.text-right > .flex {
+  justify-content: flex-end;
+}
+.NoticeCount, .EvictionCount, .AttorneyBarNo, .TotalDue,
+.MonthlyRent ,.NoticeTotalDue ,.NoticeLastPaidAmount ,.NoticeCurrentRentDue 
+,.NoticePastRentDue ,.NoticeServerId ,.NoticeCount ,.NoticeServerID 
+,.TenantZip ,.EvictionTotalRentDue ,.PropertyZip 
+,.Amount ,.CaseReferenceId ,.EvictionEnvelopeID ,.CourtTransAmt 
+,.EvictionCourtTransAmt ,.ServiceDayCal ,.Height ,.Weight 
+,.Age,.EvictionCourtFee ,.ServiceDayCalc 
+,.AddtlTenants ,.EvictioneFileClientFee , .EvictionEfileFee, .ExpFee ,.C2CFee 
+,.SheriffFee ,.C2CServiceFee ,.EvictionAutomationFee 
+,.EvictionPaymentAmount ,.PayPalFee ,.PayPalManual ,.EvictionPayPalFee  ,.EvictionPayPalManual 
+,.FilingCount ,.AOSCourtTransAmount ,.AOSPaymentAmount ,.AOSPayPalFee  ,.AOSPayPalManual 
+,.DismissalCourtTransAmount ,.DismissalPaymentAmount ,.DismissalPayPalFee  ,.DismissalPayPalManual
+ ,.WritCourtTransAmount ,.WritPaymentAmount ,.WritPayPalFee  ,.WritPayPalManual
+  ,.AmendmentCourtTransAmount ,.AmendmentPaymentAmount ,.AmendmentPayPalFee  ,.AmendmentPayPalManual 
+,.Zip ,.Invoice ,.Limit, .PaymentAmount
+,.InvoiceNo ,.EvictionCourtTransAmt ,.AOSCourtTransAmount 
+,.AddtlDocCourtTransAmount ,.DismissalCourtTransAmount ,.AmendmentCourtTransAmount 
+,.AnswerCourtTransAmount ,.WritCourtTransAmount ,.POEVService1stTenant 
+,.POEVService2ndTenant ,.POEVService3rdTenant ,.POEVService4thTenant
+ ,.POEVService5thTenant ,.POEVServiceAAOTenant ,.POWRService 
+ ,.POWRService ,.POGMService1stTime ,.POGMService2ndTime 
+ ,.EAFee ,.C2CEvictionFee ,.C2CAddtlTenantsFee 
+ ,.C2CAOSFee ,.C2CAddtlDocFee ,.C2CDismissalFee
+  ,.C2CAmendmentFee ,.C2CWritFee ,.c2COtherFee 
+  ,.C2CServiceFee ,.C2CServiceExpFee 
+  ,.C2CServiceAddtlTenantsFee ,.C2CServiceHouseFee ,.GarnishmentType 
+  ,.SheriffFeeFirstTenant ,.SheriffFeeSecondTenant ,.CourtFee 
+  ,.EfileFee ,.EfileServiceCharge ,.OtherEfileCharge 
+  ,.CourtFeeSecondTenant ,.CourtFeeAndAllOthers ,.UserReferenceId 
+  ,.CurrentBalance ,.OwnerZip ,.DaysToFileAfterNoticeDelivery ,.FilingThresholdAdjustment 
+  ,.MinimumFilingAmount ,.POEVServiceTenant1 ,.POEVServiceTenant2 
+  ,.POEVServiceTenant3 ,.POEVServiceTenant4 ,.POEVServiceTenant5 
+  ,.POEVServiceTenantAAO ,.POGMServiceAtt1 ,.POGMServiceAtt2 
+  ,.POEVServiceTotal ,.EnvelopeID, .PropertyCode, .ZipCode  {
+  text-align: right;
+} 
+.MailTotal, .MailTracking\#, .C2CCheckTotal, .ServiceTotal, .MailWeight{
+   text-align: right;
+}
+
+ .p-multiselect .p-multiselect-token {
+	font-size: .7rem;
+    line-height: normal;
+    padding: 2px 4px;
+    background: #dbeafe;
+    color: #1e40af;
+    border-radius: 5px;
+    margin: 1px;
+    display: inline-flex;
+    align-items: center;
+}
+.p-multiselect.p-component {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.p-multiselect .p-multiselect-token svg.p-icon {
+    height: 10px;
+    width: 10px;
+    margin-left: 2px;
+	margin-top: 0px;
+}
+.p-multiselect .p-multiselect-trigger {
+    width: 18px;
+    margin-right: 6px;
+}
+.p-multiselect .p-multiselect-trigger {
+  width: 12px;
+  height: 12px;
+}
+.p-multiselect .p-multiselect-label-container .p-multiselect-label {
+    white-space: normal;
+    padding: 0.25rem 0.4rem;
+}
+.p-multiselect-label.p-placeholder {
+  font-size: 12px;
+  padding: 5px 11px;
+}
+.p-multiselect-items li.p-multiselect-item,
+.p-multiselect-header {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+.fields_validation .bg-calendar.peer, .bg-calendar.peer{
+  background-size: 12px;
+}
+select.select-option, .number_filed {
+  background-size: 8px;
+}
+.filterSec .custom-select .css-13cymwt-control .css-1xc3v61-indicatorContainer {
+  padding: 5px;
+}
+.filterSec .custom-select .css-13cymwt-control .css-1xc3v61-indicatorContainer svg {
+  height: 17px;
+  width: 17px;
+}
+.vertical-nav-menu li {
+  line-height: 16px;
+}
+.case_grid .tableGrid {
+  max-height: calc(100vh - 195px);
+}
+.notices_grid .tableGrid{
+max-height: calc(100vh - 245px);
+}
+.notices_grid:has(.filterSec) .tableGrid {
+  max-height: calc(100vh - 284px);
+}
+.eviction_grid .tableGrid{
+max-height: calc(100vh - 225px);
+}
+.cases_grid .tableGrid{
+max-height: calc(100vh - 232px);
+}
+.single_payment_grid .tableGrid{
+max-height: calc(100vh - 193px);
+}
+.queue_grid .tableGrid{
+max-height: calc(100vh - 268px);
+}
+.tracker_grid .tableGrid{
+max-height: calc(100vh - 191px);
+}
+.writs_grid .tableGrid{
+max-height: calc(100vh - 232px);
+}
+.dismisal_grid .tableGrid{
+max-height: calc(100vh - 232px);
+}
+.amend_grid .tableGrid{
+max-height: calc(100vh - 232px);
+}
+.process_grid .tableGrid{
+max-height: calc(100vh - 230px);
+}
+.email_queue_grid .tableGrid{
+max-height: calc(100vh - 234px);
+}
+.email_queue_grid:has(.filterSec) .tableGrid {
+    max-height: calc(100vh - 274px);
+}
+.filing_trans_grid .tableGrid{
+max-height: calc(100vh - 268px);
+}
+.automation_grid .tableGrid{
+max-height: calc(100vh - 235px);
+}
+.automation_grid:has(.filterSec) .tableGrid {
+  max-height: calc(100vh - 272px);
+}
+.logs_grid .tableGrid{
+max-height: calc(100vh - 232px);
+}
+.settings_grid .tableGrid{
+  max-height: calc(100vh - 222px);
+}
+.settings_grid:has(.filterSec) .tableGrid {
+  max-height: calc(100vh - 226px);
+}
+.settings_grid:has(.server_doc) .tableGrid {
+  max-height: calc(100vh - 186px);
+}
+.accounting_grids .tableGrid{
+  max-height: calc(100vh - 236px);
+}
+.accounting_grids:has(.filterSec) .tableGrid {
+  max-height: calc(100vh - 274px);
+}
+.users_grid .tableGrid{
+  max-height: calc(100vh - 266px);
+}
+body .Toastify__toast {
+  min-height: 57px;
+}
+body .Toastify__toast-body {
+  font-size: 14px;
+  margin: 3px 0;
+}
+body .Toastify__toast-icon {
+  margin-inline-end: 6px;
+  width: 16px;
+}
+.transactionGrid td.amount span {
+  font-weight: 500;
+}
+.cases_grid {
+  position: relative;
+}
+.filterSec .p-multiselect.p-component {
+  min-height: 34px;
+}
+.filterSec .p-multiselect.p-component .p-multiselect-label {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.25rem 0.2rem;
+  white-space: nowrap;
+}
+.filterSec .p-multiselect.p-component .p-multiselect-token {
+  font-size: 11px;
+  padding: 2px 4px;
+  line-height: 10px;
+  display: flex;
+}
+.filterSec .p-multiselect .p-multiselect-token svg.p-icon {
+  height: 8px;
+  width: 8px;
+  margin-left: 2px;
+}
+.filterSec .p-multiselect-label.p-placeholder {
+  padding-left: 11px !important;
+}
+.p-checkbox.p-component .p-checkbox-box {
+  border: 1px solid #ccc;
+}
+.p-multiselect-panel .p-multiselect-header {
+  padding-left: 11px;
+  padding-right: 10px;
+}
+.p-component {
+  font-family: 'Montserrat';
+}
+label.p-multiselect-select-all-label {
+  margin-left: 0 !important;
+  font-weight: 500;
+}
+
+.add_eviction_form {
+  max-height: calc(100vh - 170px);
+  overflow: auto;
+  padding: 0 6px;
+  margin: 0 -6px;
+}
+.modal-box:has(.confirm_modal) {
+   z-index: 50;
+}
+th.Court, th.court,th.stateCourt  {
+  min-width: 290px;
+}
+th.document{
+  min-width: 280px;
+}
+.fields_validation .text-red-500.mb-1 ~ .text-red-500.mb-1 {
+  margin-top: 12px;
+  line-height: 9px;
+}
+th.tenantAddress {
+  min-width: 150px;
+}
+.bulkEditModal:has(.unserved_input ) {
+  max-width: 34rem;
+}
+.modal-box:has(.case_modal) {
+  z-index: 99;
+}
+
+.filingDescription {
+  min-width: 250px;
+}
+th.filingType, th.FilingType  {
+  min-width: 140px;
+}
+
+@media (min-width:768px) {
+  * {
+      scrollbar-width: thin;
+      scrollbar-color: #acabab;
+  }
+
+  :-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+  }
+
+  :-webkit-scrollbar-track {
+      background: transparent;
+  }
+
+  :-webkit-scrollbar-thumb {
+      background-color: #c7c7c7;
+      border-radius: 0;
+      border: 0px solid transparent;
+      background-color: #c7c7c7;
+  }
+
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb {
+      height: 8px;
+      border-radius: 0;
+      background-clip: padding-box;
+      border: 0px solid transparent;
+      width: 8px;
+      background-color: #d8dde3;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      box-shadow: inset 0 0 0 10px #acabab;
+  }
+
+}
+@media (min-width: 900px) {
+  .switch_btn {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    z-index: 9;
+  }
+}
+
+@media (min-width: 1340px) {
+  .xxl\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (min-width: 1399px) {
+  .xxl\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width:1550px) {
+  .w-245{
+    width: 172px;
+  }
+  .filterSec.logsFilter .select-box{
+    @apply min-w-[112px];
+  }
+  .logsFilter button {
+      column-gap: 0.2rem;
+      padding-left: 12px;
+      padding-right: 12px;
+      white-space: nowrap;
+  }
+}
+
+@media (max-width:1399px) {
+  .w-245{
+    width: 160px;
+  }
+  .logsFilter button {
+      column-gap: 0.25rem;
+      padding-left: 11px;
+      padding-right: 11px;
+      white-space: nowrap;
+      font-size: 11px;
+  }
+
+}
+@media (min-width:1280px) and (max-width:1399px) {
+  .app-main-outer:has(.filing_trans_grid) .filterSec .select-box {
+    min-width: 145px;
+  }
+  .app-main-outer:has(.filing_trans_grid) .md\:w-\[13rem\] {
+    width: 12rem;
+  }
+}
+
+@media (max-width:1299px) {
+  .left-0.app-sidebar {
+    left: -100%;
+  }
+  .left-\[-100\%\].app-sidebar {
+    left: 0;
+  }
+  .pl-\[14\.08rem\].app-main-outer, .pl-4.app-main-outer {
+    padding-left: 0.875rem !important;
+  }
+  .app-main-outer > .pl-1\.5 {
+      padding-left: 0;
+  }
+  .app-sidebar {
+    background: #fff;
+    z-index: 99 !important;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 35%);
+  }
+  .drawer-content{
+    max-width: calc(100% - 47px) !important;
+  }
+}
+
+@media (max-width:1199px) {
+  .filterSec {
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+}
+
+@media (max-width:991px) {
+  .tab_scroll .tabListView {
+    width: auto;
+  }
+  .tabListView li {
+    min-width: auto;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    white-space: nowrap;
+  }
+  .tableGrid .County, .tableGrid .State, .tableGrid .Zip, .tableGrid .City {
+      min-width: 110px;
+  }
+  .tab_scroll {
+    padding-bottom: 4px;
+  }
+  .management_view > .awitch-btn{
+      top: -23px;
+  }
+}
+@media (max-width: 900px) {
+  .switch_btn {
+    width: 100%;
+  }
+  .cases_grid .awitch-btn{
+    position: static;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width:767px) {
+  .search-box {
+    flex-wrap: wrap;
+  }
+  .filterSec {
+      flex-wrap: wrap;
+      gap: 6px;
+  }
+  .pl-\[17\.6rem\].app-main-outer, .pl-4.app-main-outer {
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+  }
+  .bg-white > .relative.-mr-1 {
+      margin-right: -1.5px !important;
+  }
+  .filterSec .select-box {
+      margin-right: 0px;
+      width: auto;
+      min-width: 128px;
+  }
+  .filterSec select.select-option, .filterSec input.bg-calendar {
+      height: 32px;
+      font-size: 11px;
+      padding: 0 18px 0 9px;
+  }
+  .custom-select .css-13cymwt-control, .custom-select .css-t3ipsp-control{
+    height: 32px !important;
+    font-size: 11px;
+  }
+
+  .filterSec .bg-\[center_right_1rem\] {
+    background-position: center right 8px;
+  }
+  .drawer-content{
+    max-width: calc(100% - 0px) !important;
+  }
+  .filterSec .w-245 { 
+      margin-right: 0px;
+  }
+  .filterSec.logsFilter .select-box{
+    margin-right: 0;
+  }
+  .wallet_grid, .invoices_grid, .customers_grid{
+    margin-top: 0px;
+  }
+  .wallet_grid .tableGrid, .invoices_grid .tableGrid, .customers_grid .tableGrid {
+    margin-top: 0px;
+  }
+  .case_grid .tableGrid {
+      max-height: calc(100vh - 238px);
+  }
+  .eviction_grid .tableGrid {
+      max-height: calc(100vh - 282px);
+  }
+  .notices_grid .tableGrid {
+    max-height: calc(100vh - 265px);
+}
+}
+
+@media (max-width:600px) {
+  .management_view > .awitch-btn {
+      position: static;
+      margin: 4px 0;
+  }
+  .logo-src {
+      min-width: 97px;
+  }
+  .hamburger img {
+      min-width: 16px;
+      width: 16px;
+      height: 12px;
+  }
+  .case_status .select-box h3 {
+      max-width: 85px;
+      line-height: normal;
+  }
+  .max-h-\[420px\] {
+      max-height: 390px !important;
+  }
+}
+@media (max-width:400px) {
+  .dropdown-menu {
+      right: 0;
+      left: auto;
+      width: 10.5rem;
+  }
+  .filterSec.logsFilter .select-box {
+    min-width: 112px;
+    max-width: 132px;
+  }
+  .w-245 {
+    width: 136px;
+  }
+
+}
+
+@media (max-width:366px) {
+  .dropdown-menu {
+      right: auto;
+      left: 0;
+  }
+}
+
+@media (max-width:370px) {
+  .filterSec .select-box {
+    min-width: 122px;
+  }
+}
+
+.bg-blue-100 {
+    background-color: #ebf8ff; /* Light blue */
+}
